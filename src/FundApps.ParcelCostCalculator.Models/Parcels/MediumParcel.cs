@@ -2,6 +2,7 @@
 {
 	public class MediumParcel : Parcel
 	{
-		public override decimal Cost => 8;
+		public override decimal BaseShippingCost => 8;
+		public override double MaxWeight => 3;
 	}
 }

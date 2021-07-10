@@ -2,6 +2,7 @@
 {
 	public class XlParcel : Parcel
 	{
-		public override decimal Cost => 25;
+		public override decimal BaseShippingCost => 25;
+		public override double MaxWeight => 10;
 	}
 }

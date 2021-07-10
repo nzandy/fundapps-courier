@@ -19,7 +19,7 @@ namespace FundApps.ParcelCostCalculator.Services.UnitTests.ParcelCreator
 		public void ShouldReturnSmallParcel_WhenAllDimensionsUnderMaxSmallSizeDimensions()
 		{
 			// Arrange
-			var smallParcelSize = ParcelDimensionConstants.MaxSmallParcelDimension - 1;
+			var smallParcelSize = ParcelConstants.MaxSmallParcelDimension - 1;
 
 			// Act
 			var parcel = _sut.CreateParcel(smallParcelSize, smallParcelSize, smallParcelSize);
@@ -32,7 +32,7 @@ namespace FundApps.ParcelCostCalculator.Services.UnitTests.ParcelCreator
 		public void ShouldReturnMediumParcel_WhenAllDimensionsUnderMaxSmallSizeDimensions()
 		{
 			// Arrange
-			var mediumParcelSize = ParcelDimensionConstants.MaxMediumParcelDimension - 1;
+			var mediumParcelSize = ParcelConstants.MaxMediumParcelDimension - 1;
 
 			// Act
 			var parcel = _sut.CreateParcel(mediumParcelSize, mediumParcelSize, mediumParcelSize);
@@ -45,7 +45,7 @@ namespace FundApps.ParcelCostCalculator.Services.UnitTests.ParcelCreator
 		public void ShouldReturnLargeParcel_WhenAllDimensionsUnderMaxLargeSizeDimensions()
 		{
 			// Arrange
-			var largeParcelSize = ParcelDimensionConstants.MaxLargeParcelDimension - 1;
+			var largeParcelSize = ParcelConstants.MaxLargeParcelDimension - 1;
 
 			// Act
 			var parcel = _sut.CreateParcel(largeParcelSize, largeParcelSize, largeParcelSize);
@@ -58,7 +58,7 @@ namespace FundApps.ParcelCostCalculator.Services.UnitTests.ParcelCreator
 		public void ShouldReturnXlParcel_WhenAllDimensionsOverMaxLargeSizeDimensions()
 		{
 			// Arrange
-			var xlParcelSize = ParcelDimensionConstants.MaxLargeParcelDimension;
+			var xlParcelSize = ParcelConstants.MaxLargeParcelDimension;
 
 			// Act
 			var parcel = _sut.CreateParcel(xlParcelSize, xlParcelSize, xlParcelSize);

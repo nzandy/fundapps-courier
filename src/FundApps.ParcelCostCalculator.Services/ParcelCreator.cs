@@ -12,9 +12,9 @@ namespace FundApps.ParcelCostCalculator.Services
 
 			return maxDimension switch
 			{
-				< ParcelDimensionConstants.MaxSmallParcelDimension => new SmallParcel(),
-				< ParcelDimensionConstants.MaxMediumParcelDimension => new MediumParcel(),
-				< ParcelDimensionConstants.MaxLargeParcelDimension => new LargeParcel(),
+				< ParcelConstants.MaxSmallParcelDimension => new SmallParcel(),
+				< ParcelConstants.MaxMediumParcelDimension => new MediumParcel(),
+				< ParcelConstants.MaxLargeParcelDimension => new LargeParcel(),
 				_ => new XlParcel()
 			};
 		}

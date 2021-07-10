@@ -32,7 +32,7 @@ namespace FundApps.ParcelCostCalculator.Models.UnitTests.Orders
 
 
 			// Assert.
-			Assert.That(totalCost, Is.EqualTo(parcel.Cost));
+			Assert.That(totalCost, Is.EqualTo(parcel.BaseShippingCost));
 		}
 
 		[Test]
@@ -58,7 +58,7 @@ namespace FundApps.ParcelCostCalculator.Models.UnitTests.Orders
 
 
 			// Assert.
-			var expectedTotalCost = parcel1.Cost + parcel2.Cost + parcel3.Cost + parcel4.Cost;
+			var expectedTotalCost = parcel1.BaseShippingCost + parcel2.BaseShippingCost + parcel3.BaseShippingCost + parcel4.BaseShippingCost;
 			Assert.That(totalCost, Is.EqualTo(expectedTotalCost));
 		}
 	}

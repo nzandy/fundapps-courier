@@ -12,7 +12,7 @@ namespace FundApps.ParcelCostCalculator.Models.Orders
 		{
 			get
 			{
-				return Parcels.Sum(p => p.Cost);
+				return Parcels.Sum(p => p.BaseShippingCost);
 			}
 		}
 	}
