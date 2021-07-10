@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/FundApps.ParcelCostCalculator/v16
+/src/FundApps.ParcelCostCalculator/.vs/FundApps.ParcelCostCalculator/DesignTimeBuild
+/src/FundApps.ParcelCostCalculator/.vs/FundApps.ParcelCostCalculator/v16
+/src/FundApps.ParcelCostCalculator/FundApps.ParcelCostCalculator/obj
+/tests/FundApps.ParcelPostCalculator.UnitTests/obj
