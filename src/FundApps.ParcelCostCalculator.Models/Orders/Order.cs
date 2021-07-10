@@ -2,13 +2,13 @@
 using System.Linq;
 using FundApps.ParcelCostCalculator.Models.Parcels;
 
-namespace FundApps.ParcelCostCalculator.Models
+namespace FundApps.ParcelCostCalculator.Models.Orders
 {
 	public class Order
 	{
 		public IEnumerable<Parcel> Parcels { get; set; }
 
-		public decimal TotalOrderCost
+		public virtual decimal TotalOrderCost
 		{
 			get
 			{

@@ -82,6 +82,5 @@ namespace FundApps.ParcelCostCalculator.UnitTests
 			Assert.That(parcels.Count, Is.EqualTo(1));
 			Assert.That(parcels.First(), Is.InstanceOf<SmallParcel>());
 		}
-
     }
 }

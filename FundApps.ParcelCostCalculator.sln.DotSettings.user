@@ -4,5 +4,7 @@
     &lt;TestId&gt;NUnit3x::33E60A13-58B2-448B-9BB6-60F3A930FF57::net5.0::FundApps.ParcelCostCalculator.UnitTests.ParcelCostCalculatorTests&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;NUnit3x::5EBF726A-88AC-4E9E-901B-2710D4B3D31B::net5.0::FundApps.ParcelCostCalculator.Models.UnitTests.Orders.TotalOrderCostTests.ShouldReturnExpectedTotalCost_WhenSingleParcel&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;NUnit3x::5EBF726A-88AC-4E9E-901B-2710D4B3D31B::net5.0::FundApps.ParcelCostCalculator.Models.UnitTests.Orders.TotalOrderCostTests.ShouldReturnExpectedTotalCost_WhenMultipleParcels&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::5EBF726A-88AC-4E9E-901B-2710D4B3D31B::net5.0::FundApps.ParcelCostCalculator.Models.UnitTests.Orders.SpeedyShippingOrderTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::33E60A13-58B2-448B-9BB6-60F3A930FF57::net5.0::FundApps.ParcelCostCalculator.UnitTests.SpeedyShippingTests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

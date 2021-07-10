@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
-using FundApps.ParcelCostCalculator.Models;
 using FundApps.ParcelCostCalculator.Models.Dtos;
+using FundApps.ParcelCostCalculator.Models.Orders;
 using FundApps.ParcelCostCalculator.Models.Parcels;
 using FundApps.ParcelCostCalculator.Services;
 
@@ -22,6 +22,19 @@ namespace FundApps.ParcelCostCalculator
 				var parcel =
 					_parcelCreator.CreateParcel(parcelRequest.Length, parcelRequest.Width, parcelRequest.Height);
 				parcels.Add(parcel);
+			}
+
+			return CreateOrderFromParcels(parcels, orderRequest.IsSpeedyShipping);
+		}
+
+		private Order CreateOrderFromParcels(IEnumerable<Parcel> parcels, bool isSpeedyShipping)
+		{
+			if (isSpeedyShipping)
+			{
+				return new SpeedyShippingOrder
+				{
+					Parcels = parcels
+				};
 			}
 
 			return new Order
