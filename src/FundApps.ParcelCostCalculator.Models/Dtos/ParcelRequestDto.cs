@@ -1,4 +1,4 @@
-﻿namespace FundApps.ParcelCostCalculator.Dtos
+﻿namespace FundApps.ParcelCostCalculator.Models.Dtos
 {
 	public class ParcelRequestDto
 	{

@@ -7,3 +7,9 @@
 /src/FundApps.ParcelCostCalculator/.vs/FundApps.ParcelCostCalculator/v16
 /src/FundApps.ParcelCostCalculator/FundApps.ParcelCostCalculator/obj
 /tests/FundApps.ParcelPostCalculator.UnitTests/obj
+/src/FundApps.ParcelCostCalculator.Models/bin/Debug/net5.0
+/src/FundApps.ParcelCostCalculator.Models/obj
+/src/FundApps.ParcelCostCalculator.Services/bin/Debug/net5.0
+/src/FundApps.ParcelCostCalculator.Services/obj
+/tests/FundApps.ParcelPostCalculator.Services.UnitTests/bin/Debug/net5.0
+/tests/FundApps.ParcelPostCalculator.Services.UnitTests/obj
