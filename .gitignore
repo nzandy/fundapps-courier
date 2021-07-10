@@ -15,3 +15,5 @@
 /tests/FundApps.ParcelPostCalculator.Services.UnitTests/obj
 /src/FundApps.ParcelCostCalculator/FundApps.ParcelCostCalculator/bin/Debug/net5.0
 /tests/FundApps.ParcelPostCalculator.UnitTests/bin/Debug/net5.0
+/tests/FundApps.ParcelCostCalculator.Models.UnitTests/bin/Debug/net5.0
+/tests/FundApps.ParcelCostCalculator.Models.UnitTests/obj

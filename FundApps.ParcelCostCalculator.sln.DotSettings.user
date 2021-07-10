@@ -2,5 +2,7 @@
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=1056432a_002Dd0d2_002D4e34_002D9a0c_002D06439eaa0b13/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="ParcelCreatorTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;NUnit3x::33E60A13-58B2-448B-9BB6-60F3A930FF57::net5.0::FundApps.ParcelCostCalculator.UnitTests.ParcelCostCalculatorTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::5EBF726A-88AC-4E9E-901B-2710D4B3D31B::net5.0::FundApps.ParcelCostCalculator.Models.UnitTests.Orders.TotalOrderCostTests.ShouldReturnExpectedTotalCost_WhenSingleParcel&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::5EBF726A-88AC-4E9E-901B-2710D4B3D31B::net5.0::FundApps.ParcelCostCalculator.Models.UnitTests.Orders.TotalOrderCostTests.ShouldReturnExpectedTotalCost_WhenMultipleParcels&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
