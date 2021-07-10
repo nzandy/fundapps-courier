@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\FundApps.ParcelCostCalculator.Models\FundApps.ParcelCostCalculator.Models.csproj" />
+    <ProjectReference Include="..\..\FundApps.ParcelCostCalculator.Services\FundApps.ParcelCostCalculator.Services.csproj" />
   </ItemGroup>
 
 </Project>

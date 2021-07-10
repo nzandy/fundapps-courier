@@ -2,17 +2,17 @@
 using FundApps.ParcelCostCalculator.Models.Parcels;
 using NUnit.Framework;
 
-namespace FundApps.ParcelPostCalculator.Services.UnitTests.ParcelCreator
+namespace FundApps.ParcelCostCalculator.Services.UnitTests.ParcelCreator
 {
 	[TestFixture]
 	public class ParcelCreatorTests
 	{
-		private ParcelCostCalculator.Services.ParcelCreator _sut;
+		private Services.ParcelCreator _sut;
 
 		[SetUp]
 		public void SetUp()
 		{
-			_sut = new ParcelCostCalculator.Services.ParcelCreator();
+			_sut = new Services.ParcelCreator();
 		}
 
 		[Test]

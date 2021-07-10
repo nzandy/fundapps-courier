@@ -9,13 +9,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{16ECA9DA-23E
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{0E4E0831-6A43-40D8-8E1C-6CCDE74543DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FundApps.ParcelPostCalculator.UnitTests", "tests\FundApps.ParcelPostCalculator.UnitTests\FundApps.ParcelPostCalculator.UnitTests.csproj", "{33E60A13-58B2-448B-9BB6-60F3A930FF57}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FundApps.ParcelCostCalculator.UnitTests", "tests\FundApps.ParcelPostCalculator.UnitTests\FundApps.ParcelCostCalculator.UnitTests.csproj", "{33E60A13-58B2-448B-9BB6-60F3A930FF57}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FundApps.ParcelCostCalculator.Services", "src\FundApps.ParcelCostCalculator.Services\FundApps.ParcelCostCalculator.Services.csproj", "{F15649D0-60CD-48DA-B93D-DF99E3305FCC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FundApps.ParcelCostCalculator.Services", "src\FundApps.ParcelCostCalculator.Services\FundApps.ParcelCostCalculator.Services.csproj", "{F15649D0-60CD-48DA-B93D-DF99E3305FCC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FundApps.ParcelCostCalculator.Models", "src\FundApps.ParcelCostCalculator.Models\FundApps.ParcelCostCalculator.Models.csproj", "{EE2F1FB6-CB70-4D83-BB0F-F92D65A1A131}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FundApps.ParcelCostCalculator.Models", "src\FundApps.ParcelCostCalculator.Models\FundApps.ParcelCostCalculator.Models.csproj", "{EE2F1FB6-CB70-4D83-BB0F-F92D65A1A131}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FundApps.ParcelPostCalculator.Services.UnitTests", "tests\FundApps.ParcelPostCalculator.Services.UnitTests\FundApps.ParcelPostCalculator.Services.UnitTests.csproj", "{85558299-A527-408A-843C-AFD8BADD367A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FundApps.ParcelCostCalculator.Services.UnitTests", "tests\FundApps.ParcelPostCalculator.Services.UnitTests\FundApps.ParcelCostCalculator.Services.UnitTests.csproj", "{85558299-A527-408A-843C-AFD8BADD367A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
