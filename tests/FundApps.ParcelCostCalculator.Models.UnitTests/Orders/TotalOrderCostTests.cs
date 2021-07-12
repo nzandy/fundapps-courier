@@ -20,7 +20,7 @@ namespace FundApps.ParcelCostCalculator.Models.UnitTests.Orders
 		public void ShouldReturnExpectedTotalCost_WhenSingleParcel()
 		{
 			// Arrange.
-			var parcel = new LargeParcel();
+			var parcel = new LargeParcel(20);
 			_sut.Parcels = new List<Parcel>
 			{
 				parcel
@@ -39,10 +39,10 @@ namespace FundApps.ParcelCostCalculator.Models.UnitTests.Orders
 		public void ShouldReturnExpectedTotalCost_WhenMultipleParcels()
 		{
 			// Arrange.
-			var parcel1 = new LargeParcel();
-			var parcel2 = new MediumParcel();
-			var parcel3 = new SmallParcel();
-			var parcel4 = new XlParcel();
+			var parcel1 = new LargeParcel(20);
+			var parcel2 = new MediumParcel(20);
+			var parcel3 = new SmallParcel(20);
+			var parcel4 = new XlParcel(20);
 
 			_sut.Parcels = new List<Parcel>
 			{

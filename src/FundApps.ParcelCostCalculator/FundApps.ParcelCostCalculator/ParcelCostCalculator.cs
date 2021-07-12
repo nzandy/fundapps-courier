@@ -20,7 +20,7 @@ namespace FundApps.ParcelCostCalculator
 			foreach (var parcelRequest in orderRequest.Parcels)
 			{
 				var parcel =
-					_parcelCreator.CreateParcel(parcelRequest.Length, parcelRequest.Width, parcelRequest.Height);
+					_parcelCreator.CreateParcel(parcelRequest);
 				parcels.Add(parcel);
 			}
 

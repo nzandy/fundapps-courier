@@ -1,9 +1,10 @@
-﻿using FundApps.ParcelCostCalculator.Models.Parcels;
+﻿using FundApps.ParcelCostCalculator.Models.Dtos;
+using FundApps.ParcelCostCalculator.Models.Parcels;
 
 namespace FundApps.ParcelCostCalculator.Services
 {
 	public interface IParcelCreator
 	{
-		Parcel CreateParcel(double length, double width, double height);
+		Parcel CreateParcel(ParcelRequestDto parcelRequest);
 	}
 }

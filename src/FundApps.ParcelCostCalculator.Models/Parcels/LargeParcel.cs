@@ -3,6 +3,10 @@
 	public class LargeParcel : Parcel
 	{
 		public override decimal BaseShippingCost => 15;
-		public override double MaxWeight => 6;
+		public override double MaxWeight => ParcelConstants.LargeParcelOverweightThreshold;
+
+		public LargeParcel(double weight) : base(weight)
+		{
+		}
 	}
 }

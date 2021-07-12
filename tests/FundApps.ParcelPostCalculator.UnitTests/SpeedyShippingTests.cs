@@ -42,8 +42,8 @@ namespace FundApps.ParcelCostCalculator.UnitTests
 				
 			};
 
-			var expectedParcelResponse = new SmallParcel();
-			_parcelCreator.Setup(pc => pc.CreateParcel(5, 5, 5)).Returns(expectedParcelResponse);
+			var expectedParcelResponse = new SmallParcel(2);
+			_parcelCreator.Setup(pc => pc.CreateParcel(parcelRequest)).Returns(expectedParcelResponse);
 
 
 			// Act.

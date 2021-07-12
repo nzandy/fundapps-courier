@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using FundApps.ParcelCostCalculator.Models;
 using FundApps.ParcelCostCalculator.Models.Dtos;
 using FundApps.ParcelCostCalculator.Models.Parcels;
 using FundApps.ParcelCostCalculator.Services;
@@ -46,7 +47,7 @@ namespace FundApps.ParcelCostCalculator.UnitTests
 
 
 			// Assert.
-			_parcelCreator.Verify(pc => pc.CreateParcel(5, 5, 5), Times.Once);
+			_parcelCreator.Verify(pc => pc.CreateParcel(parcelRequest), Times.Once);
 	    }
 
 		[Test]
@@ -57,7 +58,8 @@ namespace FundApps.ParcelCostCalculator.UnitTests
 		    {
 			    Height = 5,
 			    Length = 5,
-			    Width = 5
+			    Width = 5,
+				Weight = 2
 		    };
 
 		    var orderRequest = new OrderRequestDto
@@ -68,8 +70,8 @@ namespace FundApps.ParcelCostCalculator.UnitTests
 			    }
 		    };
 
-		    var expectedParcelResponse = new SmallParcel();
-		    _parcelCreator.Setup(pc => pc.CreateParcel(5, 5, 5)).Returns(expectedParcelResponse);
+		    var expectedParcelResponse = new SmallParcel(2);
+		    _parcelCreator.Setup(pc => pc.CreateParcel(parcelRequest)).Returns(expectedParcelResponse);
 
 
 			// Act.
@@ -80,7 +82,9 @@ namespace FundApps.ParcelCostCalculator.UnitTests
 			Assert.That(order, Is.Not.Null);
 			var parcels = order.Parcels.ToList();
 			Assert.That(parcels.Count, Is.EqualTo(1));
-			Assert.That(parcels.First(), Is.InstanceOf<SmallParcel>());
+			var parcelResult = parcels.First();
+			Assert.That(parcelResult, Is.InstanceOf<SmallParcel>());
+			Assert.That(parcelResult.GetTotalShippingCost(), Is.EqualTo(parcelResult.BaseShippingCost + ParcelConstants.ExtraWeightSurcharge));
 		}
     }
 }

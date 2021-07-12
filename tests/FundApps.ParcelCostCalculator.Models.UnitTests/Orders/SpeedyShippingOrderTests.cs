@@ -14,7 +14,7 @@ namespace FundApps.ParcelCostCalculator.Models.UnitTests.Orders
 			// Arrange
 			var parcels = new List<Parcel>
 			{
-				new LargeParcel()
+				new LargeParcel(20)
 			};
 
 			var standardOrder = new Order
@@ -37,8 +37,8 @@ namespace FundApps.ParcelCostCalculator.Models.UnitTests.Orders
 			// Arrange
 			var parcels = new List<Parcel>
 			{
-				new LargeParcel(),
-				new SmallParcel()
+				new LargeParcel(20),
+				new SmallParcel(5)
 			};
 
 			var standardOrder = new Order

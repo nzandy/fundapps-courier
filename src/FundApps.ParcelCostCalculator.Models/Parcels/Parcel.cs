@@ -2,6 +2,10 @@
 {
 	public abstract class Parcel
 	{
+		protected Parcel(double weight)
+		{
+			Weight = weight;
+		}
 		public abstract decimal BaseShippingCost { get; }
 		public abstract double MaxWeight { get; }
 		public double Weight { get; set; }
@@ -25,8 +29,9 @@
 					extraWeight++;
 				}
 
-				return BaseShippingCost + (decimal) extraWeight * ParcelConstants.ExtraWeightSurcharge;
+				return BaseShippingCost + (decimal)extraWeight * ParcelConstants.ExtraWeightSurcharge;
 			}
 		}
+
 	}
 }
