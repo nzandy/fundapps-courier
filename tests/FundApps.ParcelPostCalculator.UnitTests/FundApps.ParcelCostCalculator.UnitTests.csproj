@@ -12,7 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\FundApps.ParcelCostCalculator.Services\FundApps.ParcelCostCalculator.Services.csproj" />
-    <ProjectReference Include="..\..\src\FundApps.ParcelCostCalculator\FundApps.ParcelCostCalculator\FundApps.ParcelCostCalculator.csproj" />
+    <ProjectReference Include="..\..\src\FundApps.ParcelCostCalculator\FundApps.ParcelCostCalculator.csproj" />
   </ItemGroup>
 
 </Project>
