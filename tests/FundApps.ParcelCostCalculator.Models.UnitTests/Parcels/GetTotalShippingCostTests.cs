@@ -23,7 +23,7 @@ namespace FundApps.ParcelCostCalculator.Models.UnitTests.Parcels
 			var parcel = new SmallParcel(ParcelConstants.SmallParcelOverweightThreshold + 0.01);
 
 			// Act / Assert.
-			Assert.That(parcel.GetTotalShippingCost(), Is.EqualTo(parcel.BaseShippingCost + ParcelConstants.ExtraWeightSurcharge));
+			Assert.That(parcel.GetTotalShippingCost(), Is.EqualTo(parcel.BaseShippingCost + ParcelConstants.ExtraWeightSurchargeStandard));
 		}
 
 		[Test]
@@ -33,7 +33,17 @@ namespace FundApps.ParcelCostCalculator.Models.UnitTests.Parcels
 			var parcel = new SmallParcel(ParcelConstants.SmallParcelOverweightThreshold + 3);
 
 			// Act / Assert.
-			Assert.That(parcel.GetTotalShippingCost(), Is.EqualTo(parcel.BaseShippingCost + (ParcelConstants.ExtraWeightSurcharge * 3)));
+			Assert.That(parcel.GetTotalShippingCost(), Is.EqualTo(parcel.BaseShippingCost + (ParcelConstants.ExtraWeightSurchargeStandard * 3)));
+		}
+
+		[Test]
+		public void HeavyParcel_ShouldUseCorrectOverweightCharge()
+		{
+			// Arrange
+			var parcel = new HeavyParcel(ParcelConstants.SmallParcelOverweightThreshold + 3);
+
+			// Act / Assert.
+			Assert.That(parcel.GetTotalShippingCost(), Is.EqualTo(parcel.BaseShippingCost + (ParcelConstants.ExtraWeightSurchargeStandard * 3)));
 		}
 	}
 }

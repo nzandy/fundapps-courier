@@ -84,7 +84,7 @@ namespace FundApps.ParcelCostCalculator.UnitTests
 			Assert.That(parcels.Count, Is.EqualTo(1));
 			var parcelResult = parcels.First();
 			Assert.That(parcelResult, Is.InstanceOf<SmallParcel>());
-			Assert.That(parcelResult.GetTotalShippingCost(), Is.EqualTo(parcelResult.BaseShippingCost + ParcelConstants.ExtraWeightSurcharge));
+			Assert.That(parcelResult.GetTotalShippingCost(), Is.EqualTo(parcelResult.BaseShippingCost + ParcelConstants.ExtraWeightSurchargeStandard));
 		}
     }
 }

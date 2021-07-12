@@ -4,6 +4,7 @@
 	{
 		public override decimal BaseShippingCost => 3;
 		public override double MaxWeight => ParcelConstants.SmallParcelOverweightThreshold;
+		public override int ExtraWeightSurcharge => ParcelConstants.ExtraWeightSurchargeStandard;
 
 		public SmallParcel(double weight) : base(weight)
 		{

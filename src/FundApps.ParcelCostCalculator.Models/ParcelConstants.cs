@@ -13,6 +13,9 @@
 
 		public const int XlParcelOverweightThreshold = 10;
 
-		public const int ExtraWeightSurcharge = 2;
+		public const int HeavyParcelOverweightThreshold = 50;
+
+		public const int ExtraWeightSurchargeStandard = 2;
+		public const int ExtraWeightSurchargeHeavy = 1;
 	}
 }

@@ -8,6 +8,7 @@
 		}
 		public abstract decimal BaseShippingCost { get; }
 		public abstract double MaxWeight { get; }
+		public abstract int ExtraWeightSurcharge { get; }
 		public double Weight { get; set; }
 
 		public decimal GetTotalShippingCost()
@@ -29,7 +30,7 @@
 					extraWeight++;
 				}
 
-				return BaseShippingCost + (decimal)extraWeight * ParcelConstants.ExtraWeightSurcharge;
+				return BaseShippingCost + (decimal)extraWeight * ExtraWeightSurcharge;
 			}
 		}
 

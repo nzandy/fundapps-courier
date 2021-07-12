@@ -13,7 +13,7 @@ namespace FundApps.ParcelCostCalculator.Services
 			var maxDimension = new double[] {parcelRequest.Height, parcelRequest.Length, parcelRequest.Width}.Max();
 			var validParcels = GetValidParcelSizes(maxDimension, parcelRequest.Weight);
 
-			var parcelsOrderedByCost = validParcels.OrderBy(parcel => parcel.TotalShippingCost);
+			var parcelsOrderedByCost = validParcels.OrderBy(parcel => parcel.GetTotalShippingCost());
 			return parcelsOrderedByCost.First();
 		}
 
@@ -22,9 +22,11 @@ namespace FundApps.ParcelCostCalculator.Services
 		// try and refactor this now.
 		private IEnumerable<Parcel> GetValidParcelSizes(double maxDimension, double weight)
 		{
+			// XL and Heavy Parcel have no dimension limits... so these will always be valid parcel sizes.
 			var validParcelSizesForRequest = new List<Parcel>
 			{
-				new XlParcel(weight)
+				new XlParcel(weight),
+				new HeavyParcel(weight)
 			};
 
 			if (ParcelConstants.SmallParcelMaxDimension > maxDimension)
