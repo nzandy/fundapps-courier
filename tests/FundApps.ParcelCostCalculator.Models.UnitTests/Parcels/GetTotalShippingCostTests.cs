@@ -40,10 +40,10 @@ namespace FundApps.ParcelCostCalculator.Models.UnitTests.Parcels
 		public void HeavyParcel_ShouldUseCorrectOverweightCharge()
 		{
 			// Arrange
-			var parcel = new HeavyParcel(ParcelConstants.SmallParcelOverweightThreshold + 3);
+			var parcel = new HeavyParcel(ParcelConstants.HeavyParcelOverweightThreshold + 3);
 
 			// Act / Assert.
-			Assert.That(parcel.GetTotalShippingCost(), Is.EqualTo(parcel.BaseShippingCost + (ParcelConstants.ExtraWeightSurchargeStandard * 3)));
+			Assert.That(parcel.GetTotalShippingCost(), Is.EqualTo(parcel.BaseShippingCost + (ParcelConstants.ExtraWeightSurchargeHeavy * 3)));
 		}
 	}
 }
